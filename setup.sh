@@ -13,3 +13,4 @@ sudo cat mnemonic.txt
 # Start nubit node
 ./start.sh
 EOL
+chmod +x setup.sh
