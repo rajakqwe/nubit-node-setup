@@ -1,0 +1,32 @@
+# Clone the repository
+git clone https://github.com/yourusername/nubit-node-setup.git
+cd nubit-node-setup
+
+# Create README.md
+echo "# Nubit Node Setup" > README.md
+
+# Create setup.sh
+cat <<EOL > setup.sh
+#!/bin/bash
+
+# Install nubit node
+curl -sL1 https://nubit.sh | bash
+
+# Change to nubit-node directory
+cd nubit-node
+
+# Display mnemonic.txt content
+sudo cat mnemonic.txt
+
+# Start nubit node
+./start.sh
+EOL
+
+# Make setup.sh executable
+chmod +x setup.sh
+
+# Push changes to GitHub
+git add .
+git commit -m "Initial commit with setup script"
+git push origin main
+￼Enter
